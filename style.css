@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #060606;
+  color: #eaeaea;
+    font-family: "Inter", sans-serif;
+
+
+/* For the navigation menu */
+header {
+  background: #060606;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+ font-family: "Montserrat Alternates", sans-serif;
+}
+header h2 {
+  background: #00bfa6;
+  color: black;
+  padding: 7px 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-left: 20px;
+}
+header i {
+  color: #ffc107;
+  font-size: 30px;
+  margin-right: 20px;
+}
+header button {
+  width: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ffc107;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav a {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Hero section */
+#hero {
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+#hero div {
+  text-align: justify;
+}
+#hero img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 100%;
+  transform: rotate(-30deg);
+  margin-right: 60px;
+}
+#hero .ga {
+  display: flex;
+  margin: 20px 0;
+  gap: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+#hero button {
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background: #ffc107;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+#hero h1 {
+  font-size: 75px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  letter-spacing: 3px;
+
+}
+#hero span {
+  
+  color: #00bfa6;
+}
+#hero p {
+  letter-spacing: 2px;
+  opacity: 0.8;
+
+}
+/* About me section */
+#About-Me {
+  max-width: 1300px;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+}
+#About {
+  max-width: 60%;
+}
+#About h4 {
+  font-size: 45px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+#About h2 {
+  margin: 10px 0px;
+  font-size: 20px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+
+}
+#About #name {
+  color: #00bfa6;
+  font-weight: bolder;
+  font-family: "Montserrat Alternates", sans-serif;
+
+}
+#About #work {
+text-decoration: underline;
+}
+
+#About p {
+  line-height: 200%;
+  letter-spacing: 3px;
+  opacity: 0.8;
+
+}
+
+#skills {
+  text-align: center;
+  border: 2px solid #ffbf00;
+  background-color: #ffc107;
+  border-radius: 50px;
+  position: relative;
+  height: 280px;
+  width: 30%;
+}
+
+#skills h2 {
+  color: black;
+}
+
+#skills-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#skills-sec img {
+  width: 40px;
+  margin: 25px;
+}
+
+/* projects section */
+#projects {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#project-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-card {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
