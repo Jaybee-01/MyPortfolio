@@ -78,7 +78,7 @@ main {
   height: 400px;
   object-fit: cover;
   border-radius: 100%;
-  transform: rotate(-30deg);
+  /* transform: rotate(-30deg); */
   margin-right: 60px;
 }
 #hero .ga {
@@ -157,7 +157,7 @@ main {
   background-color: #ffc107;
   border-radius: 50px;
   position: relative;
-  height: 280px;
+  /* height: 280px; */
   width: 30%;
 }
 
@@ -177,7 +177,21 @@ main {
   width: 40px;
   margin: 25px;
 }
+/* Sliding code */
+.slide-in {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.3s ease-out;
+}
 
+.slide-in.from-left {
+  transform: translateX(-100px);
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* projects section */
 .projects,
 .all_Projects,
@@ -193,7 +207,6 @@ main {
   justify-content: center;
   top: 100px;
   height: 100vh;
-
 }
 .all_Projects {
   display: flex;
@@ -227,7 +240,7 @@ main {
 }
 .shadows {
   position: absolute;
-  bottom: -120px;
+  bottom: -110px;
   text-align: left;
   transition: 1s;
   padding: 20px;

@@ -1,0 +1,80 @@
+@media (max-width: 1362px) {
+  .shadows {
+    bottom: -140px;
+  }
+}
+@media (max-width: 1262px) {
+  #hero,
+  #AboutMe,
+  .contact {
+    max-width: 1200px;
+  }
+  #About br {
+    display: none;
+  }
+}
+@media (max-wdith: 1214px) {
+  #skills {
+    height: 300px;
+  }
+}
+@media (max-width: 1134px) {
+  #hero,
+  #AboutMe,
+  .contact {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1112px) {
+  #hero h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1052px) {
+  #hero {
+    margin-top: 100px;
+    display: block;
+    height: 100vh;
+
+    div {
+      text-align: center;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    .ga {
+      justify-content: center;
+    }
+    img {
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+    }
+    .all_Projects{
+        display: block;
+    }
+  }
+
+  #AboutMe {
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin-top: 400px;
+    overflow: visible;
+    text-align: center;
+
+}
+br {
+    display: block;
+}
+#About {
+
+}
+}
+@media (max-width: 906px){
+    #skills {
+        width: 45%;
+    }
+}
