@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
   background: #060606;
   color: #eaeaea;
-    font-family: "Inter", sans-serif;
-
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 /* For the navigation menu */
 header {
@@ -17,7 +22,7 @@ header {
   left: 0;
   right: 0;
   z-index: 99999;
- font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 header h2 {
   background: #00bfa6;
@@ -91,7 +96,6 @@ main {
   font-size: 18px;
   font-weight: bold;
   font-family: "Montserrat Alternates", sans-serif;
-
 }
 
 #hero h1 {
@@ -100,27 +104,23 @@ main {
   padding: 0;
   color: white;
   letter-spacing: 3px;
-
 }
 #hero span {
-  
   color: #00bfa6;
 }
 #hero p {
   letter-spacing: 2px;
   opacity: 0.8;
-
 }
 /* About me section */
-#About-Me {
+#AboutMe {
   max-width: 1300px;
-  height: 80vh;
+  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-
 }
 #About {
   max-width: 60%;
@@ -135,23 +135,20 @@ main {
   font-size: 20px;
   opacity: 0.8;
   letter-spacing: 2px;
-
 }
 #About #name {
   color: #00bfa6;
   font-weight: bolder;
   font-family: "Montserrat Alternates", sans-serif;
-
 }
 #About #work {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 #About p {
   line-height: 200%;
   letter-spacing: 3px;
   opacity: 0.8;
-
 }
 
 #skills {
@@ -182,24 +179,183 @@ text-decoration: underline;
 }
 
 /* projects section */
-#projects {
+.projects,
+.all_Projects,
+.each_project {
+  position: relative;
+}
+.projects {
   max-width: 1400px;
-  margin: auto;
   text-align: center;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: 100px;
+  height: 100vh;
+
 }
-#project-list {
+.all_Projects {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.project-card {
-  border: 1px solid gray;
+.each_project {
+  border-radius: 2px;
+  padding: 20px;
+  width: 28%;
+  height: 60vh;
+  text-align: center;
+  transition: 1s;
+}
+
+.each_project img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.each_project:hover {
+  transform: scale(1.06);
+
+  .short-text {
+    display: none;
+  }
+  .full-text {
+    display: block;
+  }
+}
+.shadows {
+  position: absolute;
+  bottom: -120px;
+  text-align: left;
+  transition: 1s;
+  padding: 20px;
+  background: linear-gradient(0deg, #000 4%, rgba(0, 0, 0, 0.02));
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.shadows .tools {
+  text-align: left;
+  /* margin-left: -30px; */
+}
+.full-text {
+  display: none;
+}
+
+#tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 0px;
+  gap: 20px;
+}
+button {
+  color: black;
+  border: none;
+  background-color: #ffc107 !important;
+  cursor: pointer;
+  font-weight: 900;
+}
+.tech {
+  background-color: rgb(29, 26, 26);
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.whatido {
+  text-align: center;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whatido-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.whatido-1 div {
+  border: 1px solid #00bfa6;
+  width: 30%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* box-shadow: 1px 1px 10px 1px #00bfa6; */
+  transition: 0.5s;
+}
+.whatido-1 div:hover {
+  /* transform: scale(1.05); */
+  border: 4px solid #00bfa6;
+}
+.whatido-1 div img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* contact section */
+.contact {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+}
+.contact div img {
+  background-color: #ffc107;
+  width: 30px;
+  padding: 5px;
   margin: 10px;
+  border-radius: 10px;
+}
+.contact div {
+  h1 {
+    font-size: 40px;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+}
+form input,
+textarea {
+  width: 80%;
   padding: 10px;
-  width: 300px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+form button {
+  width: 30%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #00bfa6;
+  text-align: center;
+  font-family: "Montserrat Alternates";
 }
