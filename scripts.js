@@ -13,19 +13,3 @@ form.addEventListener("submit", function (e) {
     alert(`${myName} your message have been delivered`);
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slideElements = document.querySelectorAll(".slide-in");
-
-  const onScroll = () => {
-    slideElements.forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        el.classList.add("visible");
-      }
-    });
-  };
-
-  window.addEventListener("scroll", onScroll);
-  onScroll(); // Run once on load
-});

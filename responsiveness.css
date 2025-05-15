@@ -37,24 +37,21 @@
     margin-top: 100px;
     display: block;
     height: 100vh;
+    flex-direction: column-reverse;
+    max-width: 60%;
 
-    div {
-      text-align: center;
-    }
     h1 {
-      font-size: 40px;
+      font-size: 45px;
     }
-    .ga {
-      justify-content: center;
-    }
+
     img {
       height: 300px;
       width: 300px;
       text-align: center;
       margin: auto;
     }
-    .all_Projects{
-        display: block;
+    .all_Projects {
+      display: block;
     }
   }
 
@@ -63,18 +60,94 @@
     height: 100vh;
     margin-top: 400px;
     overflow: visible;
-    text-align: center;
-
-}
-br {
+  }
+  br {
     display: block;
-}
-#About {
+  }
+  #skills {
+    width: 40%;
+  }
+  .projects {
+    margin-top: 450px;
+  }
+  .all_Projects {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+  }
+  .each_project {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 130px;
+  }
+  .shadows {
+    bottom: -110px;
+  }
 
+  #AboutMe {
+    margin-top: 100px;
+  }
+  .whatido {
+    margin-top: 700px;
+  }
+  .whatido-1 {
+    display: block;
+    margin-top: 10px;
+    max-width: 1200px;
+  }
+   .whatido-1 div {
+    width: 50%;
+    height: 60vh;
+    margin: 10px auto;
+  }
+   .whatido-1 div img{
+    width: 250px;
+    margin: 10px auto;
+  }
 }
+
+@media (max-width: 937px) {
+    
+  #AboutMe {
+    margin-top: 300px;
+  }
 }
-@media (max-width: 906px){
-    #skills {
-        width: 45%;
-    }
+@media (max-width: 906px) {
+  #skills {
+    width: 45%;
+  }
+}
+
+@media (max-width: 814px) {
+  #hero {
+    max-width: 90%;
+  }
+  #About {
+    max-width: 90%;
+  }
+  #skills {
+    width: 80%;
+  }
+  .projects {
+    margin-top: 550px;
+    text-align: center;
+  }
+    .all_Projects {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  .each_project {
+    width: 85%;
+  }
+ 
+    .whatido-1 div {
+    width: 80%;
+    height: 4%;
+    margin: 10px auto;
+  }
+   .whatido-1 div img{
+    width: 200px;
+    margin: 10px auto;
+  }
 }

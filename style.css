@@ -177,21 +177,7 @@ main {
   width: 40px;
   margin: 25px;
 }
-/* Sliding code */
-.slide-in {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: all 0.3s ease-out;
-}
 
-.slide-in.from-left {
-  transform: translateX(-100px);
-}
-
-.slide-in.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
 /* projects section */
 .projects,
 .all_Projects,
