@@ -52,7 +52,41 @@ nav a {
   text-decoration: none;
   color: white;
 }
+/* For the mobile nav */
+#menu-bar {
+  display: none;
+}
+.mobile-nav {
+  font-family: "montserrat Alternates";
+  /* background-color: #060606 ; */
+  background-color: red;
+  display: block;
+  margin-top: -40px;
+  position: absolute;
+  left: 10;
+  right: 0;
+  height: 320px;
+  width: 60%;
+  display: none;
 
+  li {
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+}
+.mobile-nav a i {
+  margin-left: 30px;
+  color: #ffc106;
+  font-size: 30px;
+}
+
+/* for the main section */
 main {
   max-width: 1400px;
   margin: auto;

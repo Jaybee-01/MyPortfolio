@@ -1,3 +1,5 @@
+// for the mobile menu bar
+
 const form = document.getElementById("formInput");
 
 form.addEventListener("submit", function (e) {
