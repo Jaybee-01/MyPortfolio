@@ -24,6 +24,9 @@
   .contact {
     max-width: 1000px;
   }
+  form button {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1112px) {
@@ -109,6 +112,11 @@
     width: 250px;
     margin: 10px auto;
   }
+
+  .contact {
+    flex-direction: column;
+    width: 60%;
+  }
 }
 
 @media (max-width: 937px) {
@@ -119,6 +127,12 @@
 @media (max-width: 906px) {
   #skills {
     width: 45%;
+  }
+  form {
+    width: 100%;
+  }
+  form button {
+    width: 30%;
   }
 }
 
@@ -151,7 +165,10 @@
   .mobile-nav.active {
     display: block;
     position: fixed;
-    transition: all 2s;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+
+    transform: translateX(0);
+    /* opacity: 1; */
   }
 
   #hero {
@@ -184,5 +201,26 @@
   .whatido-1 div img {
     width: 200px;
     margin: 10px auto;
+  }
+  .contact {
+    flex-direction: column;
+    width: 90%;
+  }
+  form {
+    width: 100%;
+  }
+  form button {
+    width: 25%;
+  }
+}
+
+@media (max-width: 617px) {
+  form button {
+    width: 30%;
+  }
+}
+@media (max-width: 514px) {
+  form button {
+    width: 39%;
   }
 }

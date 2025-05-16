@@ -60,16 +60,16 @@ nav a {
 .mobile-nav {
   font-family: "montserrat Alternates";
   background-color: #060606;
-  background-color: red;
-  display: block;
+  /* background-color: red; */
   margin-top: -40px;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   left: 10;
   right: 0;
   height: 330px;
   width: 60%;
-  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 
   li {
     margin: 20px;
@@ -86,8 +86,6 @@ nav a {
   color: #ffc106;
   font-size: 30px;
 }
-
-
 
 /* for the main section */
 main {
