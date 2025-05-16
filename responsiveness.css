@@ -133,12 +133,26 @@
   header div a {
     display: none;
   }
-  .menu-close {
+
+  #menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+  #menu-bar .menu-close {
     display: none;
   }
-  #menu-bar, .mobile-nav {
-  display: block;
-}
+  #menu-bar.active .menu-open {
+    display: none;
+  }
+  #menu-bar.active .menu-close {
+    display: block;
+  }
+
+  .mobile-nav.active {
+    display: block;
+    position: fixed;
+
+  }
 
   #hero {
     max-width: 90%;

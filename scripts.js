@@ -1,4 +1,20 @@
 // for the mobile menu bar
+const menu = document.getElementById("menu-bar");
+const navLinks = document.getElementById("mobileNav");
+const links = navLinks.querySelectorAll("a");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.onclick = () => {
+    menu.classList.remove("active");
+    navLinks.classList.remove("active");
+  };
+});
+
 
 const form = document.getElementById("formInput");
 
