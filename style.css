@@ -225,8 +225,7 @@ main {
 }
 
 /* projects section */
-.projects,
-.all_Projects,
+
 .each_project {
   position: relative;
 }
@@ -272,7 +271,7 @@ main {
 }
 .shadows {
   position: absolute;
-  bottom: -110px;
+  bottom: -140px;
   text-align: left;
   transition: 1s;
   padding: 20px;

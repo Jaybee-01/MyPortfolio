@@ -27,3 +27,8 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
   }
 });
+
+window.addEventListener("load", () => {
+  const form = document.getElementById("formInput");
+  form.reset();
+});
