@@ -15,6 +15,8 @@ links.forEach((link) => {
   };
 });
 
+
+// for the form
 const form = document.getElementById("formInput");
 
 form.addEventListener("submit", function (e) {
