@@ -387,15 +387,13 @@ form {
   align-items: center;
 }
 
-form h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-}
+
 form button {
   width: 30%;
   padding: 15px;
   margin-top: 10px;
   border-radius: 10px;
-  font-family: "Montserrat Alternates", sans-serif;
+  /* font-family: "Montserrat Alternates", sans-serif; */
   font-weight: bolder;
   color: black;
 }
