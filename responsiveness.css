@@ -1,3 +1,11 @@
+@media (max-width: 1440px) {
+  .projects {
+    margin-bottom: 20px;
+  }
+  #hero {
+    margin-bottom: 100px;
+  }
+}
 @media (max-width: 1362px) {
   .shadows {
     bottom: -140px;
@@ -74,20 +82,21 @@
     margin-top: 100px;
   }
   .whatido {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .whatido-1 {
-    display: block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    gap: 10px;
+    margin: 10px;
     max-width: 1200px;
   }
   .whatido-1 div {
     width: 50%;
-    height: 60vh;
+    height: 78vh;
     margin: 10px auto;
   }
   .whatido-1 div img {
-    width: 250px;
+    width: 180px;
     margin: 10px auto;
   }
 
@@ -163,7 +172,7 @@
 
   #AboutMe {
     flex-direction: column-reverse;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 100px;
     margin-bottom: 100px;
     overflow: visible;
@@ -210,6 +219,17 @@
   }
 }
 
+@media (max-width: 786px) {
+  #About {
+    width: 95%;
+  }
+  #AboutMe {
+    margin-bottom: 650px;
+  }
+  .projects {
+    margin-bottom: 650px;
+  }
+}
 @media (max-width: 617px) {
   form button {
     width: 30%;
@@ -225,5 +245,29 @@
   }
   .projects {
     height: 0%;
+  }
+}
+
+@media (max-width: 425px) {
+  #hero {
+    margin-top: -30px;
+  }
+ #AboutMe {
+    margin-bottom: 50px;
+  }
+  .projects {
+    margin-bottom: 50px;
+  }
+
+   .whatido {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+   .whatido-1 {
+    text-align: center;
+
+    display: block;
+    width: 100%;
   }
 }
