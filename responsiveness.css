@@ -7,7 +7,7 @@
   #hero,
   #AboutMe,
   .contact {
-    max-width: 1200px;
+    max-width: 95%;
   }
   #About br {
     display: none;
@@ -22,10 +22,22 @@
   #hero,
   #AboutMe,
   .contact {
-    max-width: 1000px;
+    max-width: 95%;
   }
   form button {
     width: 40%;
+  }
+
+  #About {
+    max-width: 65%;
+    margin-left: 10px;
+
+    h2 {
+      font-size: 15px;
+    }
+    h4 {
+      font-size: 35px;
+    }
   }
 }
 
@@ -43,10 +55,9 @@
 
   #hero {
     margin-top: 100px;
-    display: block;
-    height: 100vh;
-    flex-direction: column-reverse;
-    max-width: 60%;
+    /* display: block; */
+    /* height: 100vh; */
+    max-width: 95%;
 
     h1 {
       font-size: 45px;
@@ -58,45 +69,12 @@
       text-align: center;
       margin: auto;
     }
-    .all_Projects {
-      display: block;
-    }
   }
-
-  #AboutMe {
-    flex-direction: column-reverse;
-    height: 100vh;
-    margin-top: 400px;
-    overflow: visible;
-  }
-  br {
-    display: block;
-  }
-  #skills {
-    width: 40%;
-  }
-  .projects {
-    margin-top: 450px;
-  }
-  .all_Projects {
-    display: block;
-    margin: auto;
-    max-width: 60%;
-  }
-  .each_project {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 130px;
-  }
-  .shadows {
-    bottom: -130px;
-  }
-
   #AboutMe {
     margin-top: 100px;
   }
   .whatido {
-    margin-top: 700px;
+    margin-top: 100px;
   }
   .whatido-1 {
     display: block;
@@ -121,7 +99,7 @@
 
 @media (max-width: 937px) {
   #AboutMe {
-    margin-top: 300px;
+    margin-top: 100px;
   }
 }
 @media (max-width: 906px) {
@@ -172,29 +150,43 @@
   }
 
   #hero {
-    max-width: 90%;
+    max-width: 95%;
+    display: block;
   }
   #hero p {
     letter-spacing: 1px;
     opacity: 0.6;
-}
-  #About {
-    max-width: 90%;
   }
+  #About {
+    max-width: 100%;
+  }
+
+  #AboutMe {
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: visible;
+  }
+  br {
+    display: block;
+  }
+
   #skills {
     width: 80%;
   }
+
   .projects {
-    margin-top: 550px;
-    text-align: center;
+    top: 300px;
   }
-  .all_Projects {
-    display: block;
-    margin: auto;
-    max-width: 100%;
+
+  /* projects section */
+  .all_project {
+    width: 60%;
   }
   .each_project {
-    width: 85%;
+    width: 80%;
+    margin-bottom: 150px;
   }
 
   .whatido-1 div {
@@ -226,5 +218,12 @@
 @media (max-width: 514px) {
   form button {
     width: 39%;
+  }
+
+  #About {
+    width: 100%;
+  }
+  .projects {
+    height: 0%;
   }
 }

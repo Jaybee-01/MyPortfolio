@@ -15,6 +15,14 @@ links.forEach((link) => {
   };
 });
 
+// for the toggle mode
+// const mode = document.getElementById("mode");
+// const body = document.body;
+
+// mode.addEventListener("click", () => {
+//   body.classList.toggle("lightmode");
+//   body.classList.toggle("darkmode");
+// });
 
 // for the form
 const form = document.getElementById("formInput");
